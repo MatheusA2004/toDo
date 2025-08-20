@@ -9,3 +9,8 @@
 
 
 # DOCUMENTAÇÃO DO TODO
+`createElement()` - Cria um novo elemento
+`appendChild()` - Insere uma tag filha na tag pai
+`innerHTML` - insere um elemento dentro de outro elemento na mesma hierarquia
+
+Preciso pegar a const conteudo, inserir dentro de uma li e inserir essa tag li na ul
