@@ -11,6 +11,7 @@ const criarTarefa = (evento) => {
     
     tarefa.innerHTML = conteudo;
     tarefa.appendChild(BotaoConclui());
+    tarefa.appendChild(BotaoDeleta());
     lista.appendChild(tarefa);
     
 
@@ -44,7 +45,22 @@ const concluirTarefa = (evento) => {
     tarefaCompleta.classList.toggle('done');
 }
 
+const BotaoDeleta = () => {
+    const botaoDeleta = document.createElement('button');
 
+    botaoDeleta.innerText = 'deletar';
+    botaoDeleta.addEventListener('click', deletarTarefa);
+
+    return botaoDeleta;
+}
+
+const deletarTarefa = (evento) => {
+    const deletaEvento = evento.target;
+
+    const tarefaDeletada = deletaEvento.parentElement;
+    tarefaDeletada.remove();
+
+}
 
 
 
